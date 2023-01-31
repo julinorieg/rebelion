@@ -1,87 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lenceria de diseño-rebelion</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>rebelio lenceria de diseño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/b7e1729972.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logos/favicon.jpg" type="image/x-icon" />
 </head>
+
 <body>
-    
-    <nav>
-        <a href="index.html">
-            <img src="img/logoa.png" alt="logo de rebelion">
-        </a>
-           
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-        <ul>
-            <li>
-                <a href="pages/cuidados.html">cuidados</a>
-            </li>
-            <li>
-                <a href="pages/productos.html">productos</a>
-            </li>
-            <li>
-                <a href="pages/colecciones.html">colecciones</a>
-            </li>
-            <li>
-                <a href="pages/tabladetalles.html">tabla de talles</a>
-            </li>
-            <li>
-                <a href="pages/contacto.html">contacto</a>
-            </li>
-        </ul>
+
+    <!--inicio nav-->
+    <nav class="mainHeader navbar navigation navbar-expand-lg bg-body-tertiary">
+        <div class=" container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img class="isologotipo" src="img/logos/logoreb.png" alt="">
+                <img class="logotipo" src="img/logos/logotipo.png" alt="">
+
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" list navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="listItem nav-item">
+                        <a class="link nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="listItem nav-item">
+                        <a class=" link nav-link" href="/pages/productos.html">productos</a>
+                    </li>
+                    <li class="listItem nav-item">
+                        <a class=" link nav-link" href="/pages/colecciones.html">colecciones</a>
+                    </li>
+                    <li class="listItem nav-item">
+                        <a class=" link nav-link" href="/pages/cuidados.html">cuidados</a>
+                    </li>
+                    <li class="listItem nav-item">
+                        <a class="link nav-link" href="/pages/contacto.html">contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <!--fin nav-->
 
-    <header>
-        <img src="img/porthom.jpeg" alt="modelos de rebelion ">
-    </header>
+    <section class="heroAnimation">
 
-    <main>
-    <h1>
-       lencerie hecha con amor
-    </h1>
-    <section>
-        <img src="img/collagehom.png" alt="collage fotos de rebelion">
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos, ut sequi alias esse expedita vel impedit laudantium. Consectetur minus molestiae .</p>
+
     </section>
 
+    <main class="mainCollage">
+        <img class="collage" src="img/collagehom.png" alt="collage fotos de rebelion" />
+        <div>
+            <h1 class="mainTitle">Lenceria echa con amor</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem delectus
+                architecto praesentium in est similique molestias, impedit accusantium
+                quidem eveniet maxime voluptate, animi quibusdam itaque, provident non?
+                Quia, accusamus nobis?. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nemo quas in natus, corrupti explicabo minima
+                praesentium a tenetur vel. Aspernatur sint quod quidem odio totam iure,
+                nesciunt deserunt nihil earum.
+            </p>
+        </div>
     </main>
-    
 
-     
-        <section>
-            <h2>newsletter</h2>
-            <article>
-                <form action="envio.php">
-                    <div>
+    <footer class="footer">
+        <section class="newsletter">
+            <h3 class="newsletterTitle">newsletter</h3>
+            <form class="form" action="envio.php">
+                <div class="inputs">
+                    <div class="inputContainer">
                         <label for="name">nombre y apellido</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" />
                     </div>
-                   <div>
-                    <label for="mail">email</label>
-                    <input type="email" id="mail">
-                   </div> 
-                <div>
-                    <input type="reset" value="cancelar">
-                    <input type="submit" value="aceptar">
-                    <div>
+                    <div class="inputContainer">
+                        <label for="mail">email</label>
+                        <input type="email" id="mail" />
+                    </div>
+                </div>
+                <button class="newsletterButton" type="submit">
+                    subscribirse
+                </button>
+            </form>
+        </section>
 
-        <footer>
-            <h3>
-                Seguinos
+        <section class="follow">
+            <h3 class="followTitle">Seguinos</h3>
+            <div class="iconsContainer">
                 <a href="https://www.instagram.com/rebelion.jn/" target="_blank">
-                    <img src="img/insta.svg" alt="seguinos en instagram">
+                    <i class="fa-brands fa-instagram icon"></i>
                 </a>
-                <a href="#" target="_blank"> 
-                    <img src="img/faceicon.svg" alt="seguinos en facebook">
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook icon"></i>
                 </a>
-               
-            </h3>
-        </footer>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>
