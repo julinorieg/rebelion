@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap"); /* ENCABEZADO */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap");
 .mainHeader {
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 10px 0;
 }
 
-.logotipo,
-.isologotipo {
+.logotipo {
   height: 50px;
 }
-
-.isologotipo {
+.logotipo .isologotipo {
+  height: 50px;
   display: none;
 }
 
@@ -19,27 +18,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "oswald";
 }
-
-.list {
+.navigation .list {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-
-.listItem {
+.navigation .listItem {
   font-size: 1.8rem;
 }
-
-.link {
+.navigation .link {
   text-decoration: none;
   text-transform: capitalize;
   color: #000;
+  font-family: "oswald";
 }
-
-.link:hover {
-  color: pink;
+.navigation .link:hover {
+  color: rgb pink;
 }
 
 /* MOBILE HEADER */
@@ -138,6 +133,107 @@
   max-width: 250px;
 }
 
+.mainContainer.productos {
+  flex-direction: column;
+}
+
+.category {
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  width: 300px;
+}
+.category .productsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.category .product {
+  width: 200px;
+  height: 200px;
+}
+
+/*MOBILE PRODUCTOS*/
+@media (min-width: 1025px) {
+  .productsContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.mainContainer.colecciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collectionTitle {
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+}
+.collectionTitle .svTitle {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  font-family: "sacramento";
+  font-size: 2.5rem;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "image1 image2 image3" "image1 image4 image4" "image5 image6 image7";
+  max-width: 800px;
+  gap: 10px;
+}
+.collections .collectionItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collections .collectionItem1 {
+  grid-area: image1;
+}
+.collections .collectionItem2 {
+  grid-area: image2;
+}
+.collections .collectionItem3 {
+  grid-area: image3;
+}
+.collections .collectionItem4 {
+  grid-area: image4;
+}
+.collections .collectionItem5 {
+  grid-area: image5;
+}
+.collections .collectionItem6 {
+  grid-area: image6;
+}
+.collections .collectionItem7 {
+  grid-area: image7;
+}
+
+.collections img:hover {
+  transform: scale(1.3);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.collectionImage {
+  width: 350px;
+  height: 350px;
+}
+
 .mainCollage {
   display: flex;
   flex-direction: column-reverse;
@@ -151,12 +247,12 @@
   max-width: 400px;
 }
 .mainCollage .mainTitle {
-  font-family: "sacramento";
-  margin: 0 0 10px 0;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 0 0 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
-  text-align: center;
-  text-transform: capitalize;
+  font-family: "sacramento";
   font-size: 2.5rem;
 }
 .mainCollage .description {
@@ -169,6 +265,61 @@
     flex-direction: row;
     align-items: flex-start;
   }
+}
+.mainContainer.contacto {
+  flex-direction: column;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 2.5rem;
+  font-family: "oswald";
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "oswald";
+}
+
+form label {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.formularioContacto {
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 1px solid gray;
+  padding: 4.5em 3em;
+  margin: auto;
+  background-color: rgba(255, 105, 180, 0.315);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.mainTitle {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  font-family: "sacramento";
+  font-size: 2.5rem;
+}
+
+.mainContainer.cuidados {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.listItem {
+  font-weight: 300;
+  text-align: justify;
+  font-family: "oswald";
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
