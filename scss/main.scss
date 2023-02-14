@@ -4,11 +4,12 @@
 @import "_hero";
 @import "_footer";
 @import "_mixins";
+@import "_productos";
+@import "_cuida";
+@import "_colecc";
 
 
-
-// CONTENEDOR PRINCIPAL //
-
+//CONTENEDOR PRINCIPAL
 
 .mainCollage {
     display: flex;
@@ -24,24 +25,75 @@
     }
 
     .mainTitle{
+        @include titulos(capitalize, center, 0 0 0 10px 0, 10px, 1px solid #000);
         font-family: $tittleFont;
-        margin: 0 0 10px 0 ;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #000;
-        text-align: center;
-        text-transform:capitalize;
         font-size: $sizeXl;
+    
     }
+    
     .description{
         font-size: $sizeS ;
         font-family: $mainFont;
     }
 }
 
-// MOBILE CONTENEDOR PRINCIPAL //
+// MOBILE CONTENEDOR PRINCIPAL
 @media (min-width: 1025px) {
     .mainCollage {
         flex-direction: row;
         align-items: flex-start;
     }
+}
+
+
+//CONTACTO
+.mainContainer.contacto{
+    flex-direction: column;
+    text-align: center;
+}
+.contactTitle{
+    font-size: $sizeXl;
+    font-family: $mainFont;
+}
+p{
+    font-size: $sizeS;
+    font-family: $mainFont;
+}
+
+form label{
+    font-size: 1.6rem;
+    display: block;
+}
+
+.formularioContacto{
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid gray;
+    padding: 4.5em 3em;
+    margin: auto;
+    background-color: rgba(255, 105, 180, 0.315);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+//cuidados
+.mainTitle{
+    @include titulos(capitalize, center, 0 0 0 10px 0, 10px, 1px solid #000);
+        font-family: $tittleFont;
+        font-size: $sizeXl;
+}
+
+.mainContainer.cuidados{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10px;
+}
+.listItem{
+    font-weight: 300;
+    text-align: justify;
+    font-family: $mainFont;
+    font-size: $sizeS;
+    
 }
