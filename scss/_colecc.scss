@@ -1,0 +1,70 @@
+.mainContainer.colecciones{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collectionTitle{
+    margin: 10px auto  ;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom:  1px solid gray;
+    .svTitle{
+        @include titulos(capitalize, center, 0 0 0 10px 0, 10px, 1px solid #000);
+        font-family: $tittleFont;
+        font-size: $sizeXl;
+}
+    }
+    
+
+.collections{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+"image1 image2 image3"
+"image1 image4 image4"
+"image5 image6 image7";
+max-width: 800px;
+gap: 10px;
+.collectionItem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collectionItem1{
+    grid-area: image1;
+   
+}
+.collectionItem2 {
+    grid-area: image2;
+}
+.collectionItem3 {
+    grid-area: image3;
+}
+.collectionItem4 {
+    grid-area: image4;
+}
+.collectionItem5 {
+    grid-area: image5;
+}
+.collectionItem6 {
+    grid-area: image6;
+}
+.collectionItem7 {
+    grid-area: image7;
+}
+
+}
+
+.collections img:hover{
+    transform:scale(1.3);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.collectionImage{
+    width: 350px;
+    height: 350px;    
+}
