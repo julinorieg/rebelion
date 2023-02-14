@@ -1,0 +1,7 @@
+@mixin titulos($transform, $aling, $margin, $padB, $bordb){
+    text-transform: $transform;
+    text-align: $aling;
+    margin: $margin;
+    padding-bottom: $padB;
+    border-bottom: $bordb;
+}
