@@ -1,46 +1,42 @@
 
-/* ENCABEZADO */
+//ENCABEZADO 
 
 .mainHeader {
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 10px 0;
 }
-//nav//
-.logotipo,
-.isologotipo {
+
+.logotipo{
     height: 50px;
+    .isologotipo{
+        height: 50px;
+        display: none;
+    }
 }
-.isologotipo {
-    display: none;
-}
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: $mainFont;
+    .list{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+    .listItem{
+        font-size: 1.8rem;
+    }
+    .link{
+        text-decoration: none;
+        text-transform:capitalize;
+        color: #000;
+        font-family: $mainFont;
+    }
+    .link:hover{
+        color: $linkColor;
+    }
 }
-
-.list {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.listItem {
-    font-size: $sizeM;
-}
-
-.link {
-    text-decoration: none;
-    text-transform:capitalize;
-    color: #000;
-}
-.link:hover {
-    color: pink;
-
-}
-
 
 /* MOBILE HEADER */
 @media (min-width: 1025px) {
