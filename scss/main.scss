@@ -1,0 +1,47 @@
+@import "_variables";
+@import "_fonts";
+@import "_nav";
+@import "_hero";
+@import "_footer";
+@import "_mixins";
+
+
+
+// CONTENEDOR PRINCIPAL //
+
+
+.mainCollage {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+
+    .collage {
+        max-width: 400px;
+    }
+
+    .mainTitle{
+        font-family: $tittleFont;
+        margin: 0 0 10px 0 ;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        text-transform:capitalize;
+        font-size: $sizeXl;
+    }
+    .description{
+        font-size: $sizeS ;
+        font-family: $mainFont;
+    }
+}
+
+// MOBILE CONTENEDOR PRINCIPAL //
+@media (min-width: 1025px) {
+    .mainCollage {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
