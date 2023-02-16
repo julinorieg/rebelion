@@ -9,7 +9,8 @@
 .logotipo {
   height: 50px;
 }
-.logotipo .isologotipo {
+
+.isologotipo {
   height: 50px;
   display: none;
 }
@@ -37,7 +38,6 @@
   color: rgb pink;
 }
 
-/* MOBILE HEADER */
 @media (min-width: 1025px) {
   .isologotipo {
     display: inherit;
@@ -160,7 +160,6 @@
   height: 200px;
 }
 
-/*MOBILE PRODUCTOS*/
 @media (min-width: 1025px) {
   .productsContainer {
     flex-direction: row;
