@@ -1,8 +1,8 @@
 
 
-// FOOTER //
+// FOOTER
 
-//extend//
+//extend
 .footerBot{
     display: flex;
     gap: 10px;
@@ -50,7 +50,7 @@
     }
 
 
-/* MOBILE FOOTER */
+// MOBILE FOOTER
 @media (min-width: 1025px) {
     .footer{
         flex-direction: row;
