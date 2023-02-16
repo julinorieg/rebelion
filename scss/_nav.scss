@@ -9,10 +9,10 @@
 
 .logotipo{
     height: 50px;
-    .isologotipo{
-        height: 50px;
-        display: none;
-    }
+}
+.isologotipo{
+    height: 50px;
+    display: none;
 }
 
 .navigation {
@@ -39,6 +39,7 @@
 }
 
 //MOBILE HEADER 
+
 @media (min-width: 1025px) {
     .isologotipo {
         display: inherit;
