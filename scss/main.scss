@@ -92,8 +92,15 @@ form label{
 }
 .listItem{
     font-weight: 300;
-    text-align: justify;
+    text-align:justify;
     font-family: $mainFont;
     font-size: $sizeS;
-    
+    padding: 10px;
+}
+
+.msjCuidados{
+        font-family: $tittleFont;
+        font-size: $sizeM; 
+        text-align: center;
+        padding: 10px; 
 }
