@@ -34,9 +34,6 @@
   color: #000;
   font-family: "oswald";
 }
-.navigation .link:hover {
-  color: rgb pink;
-}
 
 @media (min-width: 1025px) {
   .isologotipo {
@@ -320,6 +317,14 @@ form label {
   text-align: justify;
   font-family: "oswald";
   font-size: 1.2rem;
+  padding: 10px;
+}
+
+.msjCuidados {
+  font-family: "sacramento";
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
